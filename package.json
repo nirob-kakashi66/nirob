@@ -13,7 +13,6 @@
 		"bcrypt": "^5.0.1",
 		"canvas": "^2.9.1",
 		"cheerio": "^1.0.0-rc.12",
-		"child_process": "^1.0.2",
 		"connect-flash": "^0.1.1",
 		"cookie-parser": "^1.4.6",
 		"eta": "^1.12.3",
@@ -51,9 +50,9 @@
 		"websocket-stream": "^5.5.2"
 	},
 	"scripts": {
-		"start": "set NODE_ENV=&& node index.js",
-		"dev": "set NODE_ENV=development&& node index.js",
-		"prod": "set NODE_ENV=production&& node index.js"
+		"start": "node index.js",
+		"dev": "NODE_ENV=development node index.js",
+		"prod": "NODE_ENV=production node index.js"
 	},
 	"author": "NTKhang",
 	"license": "MIT",
